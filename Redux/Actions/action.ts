@@ -11,7 +11,6 @@ export const getCountry = (inp: string, nav: any) => (dispatch: Dispatch) => {
   return http
     .get(`https://restcountries.eu/rest/v2/name/${inp}`)
     .then((res) => {
-      console.log(res.data);
       dispatch({ type: "GET_COUNTRY", payload: res.data[0] });
       nav.navigate("Country", res.data[0]);
     })

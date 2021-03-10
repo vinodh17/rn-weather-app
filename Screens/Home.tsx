@@ -13,6 +13,7 @@ const [input, setCountry] = useState("");
   return (
     <View style={styles.container}>
       <Text style={styles.inputContainer}>
+				</Text>
         <TextInput
           style={styles.input}
           onChangeText={(inpu) => setCountry(inpu)}
@@ -20,7 +21,6 @@ const [input, setCountry] = useState("");
         />
 
         <Button onPress={getCountryDetails} title="Submit"></Button>
-      </Text>
     </View>
   );
 };
@@ -35,10 +35,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
 	},
 	inputContainer: {
-		display: 'flex',
-		flexDirection: 'column',
-		alignItems: 'center',
-		justifyContent: 'center',
+		// display: 'flex',
+		// flexDirection: 'column',
+		// alignItems: 'center',
+		// justifyContent: 'center',
 	},
   input: {
 		color: '#000',
@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
 		borderRadius: 5,
 		fontSize: 18,
-		flex: 1,
 		marginBottom: 10
   },
 });

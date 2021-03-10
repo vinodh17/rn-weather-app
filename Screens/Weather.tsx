@@ -2,17 +2,15 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { connect } from "react-redux";
 
-const Weather = ({ weather }: any) => {
+const Weather = (props: any) => {
   return (
     <View style={styles.container}>
-      <Text>Temperature: {weather.temperature},</Text>
-      <Text>Wind Speed: {weather.wind_speed},</Text>
-      <Text>Perception: {weather.precip}</Text>
-      <Text>{weather.weather_icons}</Text>
-
+      <Text>Temperature: {props.weather.temperature},</Text>
+      <Text>Wind Speed: {props.weather.wind_speed},</Text>
+      <Text>Perception: {props.weather.precip}</Text>
       <Image
-        style={{ height: 100, width: 100, borderRadius: 50 }}
-        source={{ uri: weather.weather_icons }}
+        style={{ height: 120, width: 120, borderRadius: 60, marginTop: 10 }}
+        source={{ uri: `${props.weather.weather_icons}` }}
       />
     </View>
   );
