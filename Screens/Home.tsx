@@ -11,7 +11,7 @@ const [input, setCountry] = useState("");
   };
 
   return (
-    <View style={styles.container}>
+    <View testID="home-wrapper" style={styles.container}>
       <Text style={styles.inputContainer}>
 				</Text>
         <TextInput

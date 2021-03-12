@@ -6,7 +6,7 @@ import { SvgUri } from 'react-native-svg';
 
  const Country = ({ navigation, country, getWeather }: any) => {
   return (
-    <View style={styles.container}>
+    <View testID="country-wrapper" style={styles.container}>
       <Text>
         <Text>Capital : {country.capital}, </Text>
         <Text>Population : {country.population}, </Text>

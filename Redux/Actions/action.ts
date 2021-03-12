@@ -1,5 +1,5 @@
 import { Dispatch } from "redux";
-import http from "../../Screens/utils/http";
+import http from "../../utils/http";
 
 const initialState = {
   country: {},

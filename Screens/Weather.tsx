@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 const Weather = (props: any) => {
   return (
-    <View style={styles.container}>
+    <View testID="weather-wrapper" style={styles.container}>
       <Text>Temperature: {props.weather.temperature},</Text>
       <Text>Wind Speed: {props.weather.wind_speed},</Text>
       <Text>Perception: {props.weather.precip}</Text>
